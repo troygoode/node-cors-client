@@ -1,5 +1,37 @@
+<!DOCTYPE HTML>
 <html>
+  <head>
+    <title>node-cors-client</title>
+  </head>
   <body>
-    <p>Hello world.</p>
+    <section>
+      <h1>What happens without CORS?</h1>
+      <article data-url="/no-cors" data-method="GET"></article>
+    </section>
+
+    <hr />
+
+    <section>
+      <h1>Simple Requests (No Pre-Flight)</h1>
+      <article data-url="/simple-cors" data-method="GET"></article>
+      <article data-url="/simple-cors" data-method="HEAD"></article>
+      <article data-url="/simple-cors" data-method="POST"></article>
+    </section>
+
+    <hr />
+
+    <section>
+      <h1>Complex Requests (Pre-Flight Required)</h1>
+      <article data-url="/complex-cors" data-method="DELETE"></article>
+    </section>
+
+    <script id='template' type='text/template'>
+      <h2></h2>
+      <pre></pre>
+      <div><textarea></textarea><p class='error'></p></div>
+      <div><button>Fetch</button></div>
+    </script>
+    <script src="/jquery-2.0.0.min.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
