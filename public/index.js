@@ -1,6 +1,6 @@
 $(function(){
   var template = $('#template').html();
-  var baseUrl = 'http://node-cors-server.herokuapp.com';
+  var baseUrl = 'https://node-cors-server.herokuapp.com';
 
   if(/^http\:\/\/localhost/.test(window.location.href)){
     baseUrl = 'http://localhost:3000'; // for running/testing locally
