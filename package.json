@@ -7,7 +7,7 @@
     "start": "next start",
     "build": "next build",
     "export": "npm run build && next export",
-    "prettier": "prettier --write {components,pages}/**/*.js"
+    "prettier": "prettier --write {components,pages}/**/*.js next.config.js"
   },
   "engines": {
     "node": "^10.15",
