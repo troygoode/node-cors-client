@@ -3,14 +3,20 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "prettier": "prettier --write server.js"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier --write {components,pages}/**/*.js"
   },
   "engines": {
     "node": "^10.15",
     "npm": "^2"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "prettier": "^1.17.1"
