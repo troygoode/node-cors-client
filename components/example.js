@@ -1,7 +1,7 @@
 import { useState } from "react";
 import fetch from "isomorphic-unfetch";
 
-const baseUrl = "http://localhost:3001" || process.env.BASE_URL;
+const baseUrl = "http://localhost:3001" || process.env.NEXT_STATIC_BASE_URL;
 
 const styles = {
   idle: {
