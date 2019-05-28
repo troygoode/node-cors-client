@@ -1,7 +1,13 @@
+import Head from 'next/head';
 import Example from "../components/example";
 
 export default () => (
   <main>
+    <Head>
+      <title>node-cors-client</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+
     <section>
       <h1>What happens without CORS?</h1>
       <Example heading="Example #1" url="/no-cors" method="GET" />
